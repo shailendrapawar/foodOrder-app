@@ -1,11 +1,12 @@
 import {combineReducers, createStore} from "redux"
-
-const initialState={
-    
-}
+import  menuReducer from "./reducers/menuReducer"
+import cartReducer from "./reducers/cartReducer"
 
 const rootReducer=combineReducers({
-    menu:[],
-    cart:[],
-    wishlist:[]
+    menu:menuReducer,
+    cart:cartReducer,
+    // wishlist:[]
 })
+
+ export const store=combineReducers(rootReducer,window.__REDUX_DEVTOOLS_EXTENSIONS__?.())
+ 
