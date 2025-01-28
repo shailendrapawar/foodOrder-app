@@ -15,12 +15,14 @@ const CartPage=React.lazy(()=>import("./pages/cart/Cart.jsx"))
 
 import { myStore } from "./store/store.js"
 import { Provider } from 'react-redux'
+import Pizza from './pages/pizza/Pizza.jsx'
 
 
 const myRouter = createBrowserRouter(
   createRoutesFromElements(
     <Route path='/' element={<Layout />}>
       <Route path='' element={<Home />}></Route>
+      <Route path='/pizza' element={<Pizza/>}/>
       <Route path="/cart" element={<Cart />}></Route>
     </Route>
   )

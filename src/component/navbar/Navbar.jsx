@@ -4,12 +4,14 @@ const Navbar = () => {
   return (
     <div className="h-16 bg-amber-400 absolute w-screen bottom-0 flex items-center justify-center">
 
-      <div className=" nav-items flex justify-evenly w-52 h-8">
+      <div className=" nav-items flex justify-evenly w-[50%]  h-8">
         <NavLink to="/" className=" w-20 flex justify-center items-center ">Home</NavLink>
+        <NavLink to="/pizza" className=" w-20 flex justify-center items-center ">Pizza</NavLink>
         <NavLink to="/cart" className=" w-20 flex justify-center items-center">Cart</NavLink>
       </div>
 
     </div>
   )
 }
-export default Navbar
+
+export default Navbar;
