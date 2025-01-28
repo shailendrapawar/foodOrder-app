@@ -1,0 +1,6 @@
+.items-list-body{
+    overflow-x: scroll;
+}
+.items-list-body::-webkit-scrollbar{
+    display: none;
+}
