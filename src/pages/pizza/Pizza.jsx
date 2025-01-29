@@ -1,12 +1,25 @@
-import { useState } from "react"
+import { useState,useEffect } from "react"
 import "./pizza.css"
 import { useSelector } from "react-redux"
 import ItemCard from "../../component/itemCard/ItemCard"
 const Pizza = () => {
 
   const [veg, setVeg] = useState(false)
-  const pizza = useSelector((state) => state.pizza)
+  const p = useSelector((state) => state.pizza)
+  const[pizza,setPizza]=useState(p);
   // console.log(pizza)
+
+  useEffect(() => {
+    
+    if(veg){
+      let newData=pizza.filter((item)=>item.veg==true)
+    setPizza(newData)
+    }else{
+      setPizza(p)
+    }
+    
+  }, [veg])
+  
 
   
   return (
