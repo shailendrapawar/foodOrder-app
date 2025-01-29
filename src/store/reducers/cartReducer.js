@@ -33,7 +33,7 @@ export  function cartReducer(state=[],action){
         case "cart/increaseQty":{
             return state.map((item)=>{
                 if(item.id===action.payload.id){
-                    return {...item,qty:item.qty+1}
+                    return {...item,qty:item.quantity+1}
                 }
                 return item
             })
@@ -43,10 +43,10 @@ export  function cartReducer(state=[],action){
         case "cart/decreaseQty":{
             return state.map((item)=>{
                 if(item.id===action.payload.id){
-                    return {...item,qty:item.qty-1}
+                    return {...item,qty:item.quantity-1}
                 }
                 return item
-            }).filter((item)=>item.qty>0)
+            }).filter((item)=>item.quantity>0)
         }
 
 
