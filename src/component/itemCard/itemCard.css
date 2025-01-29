@@ -1,10 +1,8 @@
 .item-desc{
     
     display: none;
-    /* animation: cardAnime 3s once; */
 }
 .item-img{
-    /* animation: imgAnime 1s infinite; */
 }
 
 @keyframes cardAnime{
@@ -12,9 +10,6 @@
         translate: 0px 50px;
         opacity: 0;
     }
-    /* 50%{
-        opacity: 0;
-    } */
     100%{
         translate: 0px 0px;
         opacity: 1;

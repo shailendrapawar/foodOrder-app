@@ -3,7 +3,7 @@ import "./cart.css"
 
 const Cart = () => {
   return (
-    <div>Cart</div>
+    <div className='bg-slate-200'>Cart</div>
   )
 }
 
