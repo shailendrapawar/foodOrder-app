@@ -21,10 +21,13 @@ export  function cartReducer(state=[],action){
         case "cart/add":{
 
             const index=state.findIndex((item)=>item.id===action.payload.id)
+            
 
             if(index<0){
+                
                 return [...state,{...action.payload}]
             }else{
+                
                 const updatedCart=[...state];
                 updatedCart[index].quantity+=1;
                 return updatedCart

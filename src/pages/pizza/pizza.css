@@ -1,0 +1,7 @@
+.pizzaList-body{
+    overflow-y: scroll;
+}
+.pizzaList-body::-webkit-scrollbar{
+    display: none;
+
+}
