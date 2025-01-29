@@ -52,7 +52,7 @@ const FoodData = [
     desc: "Start your day with a stack of fluffy pancakes served with maple syrup and a dollop of butter. A timeless breakfast favorite that's sure to satisfy your morning cravings.",
     category: "Breakfast",
     rating: 4.5,
-    "quantity": 1,
+    quantity: 1,
 
   },
   {
@@ -63,7 +63,7 @@ const FoodData = [
     desc: "Indulge in a buttery croissant filled with scrambled eggs, crispy bacon, and melted cheese. A savory and satisfying breakfast option that's perfect for on-the-go mornings.",
     category: "Breakfast",
     rating: 4.2,
-    "quantity": 1,
+    quantity: 1,
   },
   {
     id: 80,
@@ -73,7 +73,7 @@ const FoodData = [
     desc: "Enjoy a healthy and refreshing breakfast with layers of creamy Greek yogurt, fresh berries, honey, and granola. A balanced option that provides a burst of flavors and energy.",
     category: "Breakfast",
     rating: 4.1,
-    "quantity": 1,
+    quantity: 1,
   },
   {
     id: 90,
@@ -83,7 +83,7 @@ const FoodData = [
     desc: "Savor the creaminess of mashed avocado on toasted whole grain bread, topped with a sprinkle of sea salt and red pepper flakes. A trendy and nutritious breakfast choice.",
     category: "Breakfast",
     rating: 4.6,
-    "quantity": 1,
+    quantity: 1,
   },
   {
     id: 100,
@@ -93,7 +93,7 @@ const FoodData = [
     desc: "Warm up with a bowl of hearty oatmeal packed with mixed fruits, nuts, and a drizzle of honey. A wholesome breakfast that provides a satisfying start to your day.",
     category: "Breakfast",
     rating: 4.5,
-    "quantity": 1,
+    quantity: 1,
   },
   {
     id: 110,
@@ -103,7 +103,7 @@ const FoodData = [
     desc: "Delight in a perfectly grilled salmon fillet seasoned with herbs and served with a side of roasted vegetables. A healthy and flavorful dinner option that's rich in omega-3 fatty acids.",
     category: "Dinner",
     rating: 4.5,
-    "quantity": 1,
+    quantity: 1,
   },
   {
     id: 120,
@@ -113,7 +113,7 @@ const FoodData = [
     desc: "Indulge in creamy fettuccine Alfredo pasta with tender pieces of grilled chicken. This comforting dinner dish is a blend of pasta, rich Alfredo sauce, and savory chicken.",
     category: "Dinner",
     rating: 4.8,
-    "quantity": 1,
+    quantity: 1,
   },
   {
     id: 130,
@@ -123,7 +123,7 @@ const FoodData = [
     desc: "Enjoy a medley of colorful vegetables stir-fried in a flavorful sauce, served over steamed rice. A light and nutritious dinner that's both satisfying and wholesome.",
     category: "Dinner",
     rating: 4.2,
-    "quantity": 1,
+    quantity: 1,
   },
   {
     id: 140,
@@ -133,7 +133,7 @@ const FoodData = [
     desc: "Savor the flavors of a delicious burrito bowl with tender grilled chicken, black beans, rice, sautéed peppers and onions, shredded cheese, and a drizzle of zesty cilantro-lime dressing. A hearty and satisfying chicken dinner option.",
     category: "Dinner",
     rating: 4.6,
-    "quantity": 1,
+    quantity: 1,
   },
   {
     id: 150,
@@ -143,7 +143,7 @@ const FoodData = [
     desc: "Indulge in creamy and flavorful mushroom risotto, made with Arborio rice, sautéed mushrooms, and a touch of Parmesan cheese. A comforting and sophisticated dinner choice.",
     category: "Dinner",
     rating: 4.5,
-    "quantity": 1,
+    quantity: 1,
   },
   {
     id: 160,
@@ -153,7 +153,7 @@ const FoodData = [
     desc: "Enjoy a variety of artisan cheeses, paired with an assortment of crispy crackers and complemented by fresh fruits and nuts. A delightful snack option for sharing or indulging in on your own.",
     category: "Snacks",
     rating: 4.3,
-    "quantity": 1,
+    quantity: 1,
   },
   {
     id: 170,
@@ -163,8 +163,7 @@ const FoodData = [
     desc: "Savor the satisfying crunch of crispy chicken wings seasoned to perfection. Choose your favorite sauce, from tangy BBQ to spicy buffalo, for a flavorful snacking experience.",
     category: "Snacks",
     rating: 4.4,
-    "quantity": 1,
-    "quantity": 1,
+    quantity: 1,
   },
   {
     id: 180,
@@ -174,8 +173,7 @@ const FoodData = [
     desc: "Enjoy succulent pieces of marinated paneer (Indian cottage cheese) skewered and grilled to perfection. Served with mint chutney, these paneer tikka skewers offer a flavorful and aromatic Indian snack experience.",
     category: "Snacks",
     rating: 4.9,
-    "quantity": 1,
-    "quantity": 1,
+    quantity: 1,
   },
   {
     id: 190,
@@ -185,8 +183,7 @@ const FoodData = [
     desc: "Relish the smooth and flavorful hummus accompanied by a variety of fresh vegetable sticks and pita bread. A nutritious and satisfying option for a light and refreshing snack.",
     category: "Snacks",
     rating: 4.4,
-    "quantity": 1,
-    "quantity": 1,
+    quantity: 1,
   },
   {
     id: 200,
@@ -196,8 +193,7 @@ const FoodData = [
     desc: "Indulge in a colorful assortment of fruit skewers featuring juicy chunks of melon, berries, pineapple, and more. A sweet and refreshing snack that's both delicious and visually appealing.",
     category: "Snacks",
     rating: 4.8,
-    "quantity": 1,
-    "quantity": 1,
+    quantity: 1,
   },
 ];
 export default FoodData;

@@ -5,8 +5,12 @@ import { FaCartShopping } from "react-icons/fa6";
 import { FaCircleInfo } from "react-icons/fa6";
 import { FaStar } from "react-icons/fa";
 
+import { cart_add,cart_remove } from "../../store/reducers/cartReducer";
+import { useDispatch } from "react-redux";
+
 
 const ItemCard = ({ data }) => {
+  const dispatch=useDispatch();
   const [clicked, setClicked] = useState(false)
 
   return (
@@ -20,7 +24,9 @@ const ItemCard = ({ data }) => {
         </div>
 
         <b className="text-slate-500">${data.price}</b>
-        <FaCartShopping className="h-6 w-6 text-green-600 self-end" />
+        <FaCartShopping className="h-6 w-6 text-green-600 self-end" onClick={()=>{
+          dispatch(cart_add(data))
+        }} />
       </div>
     </div>
   )

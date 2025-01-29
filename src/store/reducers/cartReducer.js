@@ -20,7 +20,16 @@ export  function cartReducer(state=[],action){
     switch(action.type){
         case "cart/add":{
 
-            return [...state,{...action.payload,qty:1}]
+            const index=state.findIndex((item)=>item.id===action.payload.id)
+
+            if(index<0){
+                return [...state,{...action.payload}]
+            }else{
+                const updatedCart=[...state];
+                updatedCart[index].quantity+=1;
+                return updatedCart
+            }
+            
         }
         case "cart/remove":{
             return state.filter((item)=>{
