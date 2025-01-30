@@ -16,9 +16,9 @@ const Address = () => {
             e.preventDefault();
             return
         }
+        
         const userAddress = { name, phone, address };
         console.log("User Address Submitted:", userAddress);
-
         navigate("/orderConfirm")
     };
 

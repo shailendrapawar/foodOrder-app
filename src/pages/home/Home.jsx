@@ -8,7 +8,7 @@ const Home = () => {
 
   const s = useSelector((s) => s.menu)
   const [menu,setMenu]=useState(s);
-  console.log(s)
+  // console.log(s)
 
   const[searchKeyword,setSearchKeyword]=useState("");
     const handleSearch=()=>{
@@ -20,7 +20,7 @@ const Home = () => {
         const filterItem=s.filter((item)=>{
           return item.name.toLowerCase().includes(searchKeyword.toLowerCase())
         })
-        console.log(filterItem)
+        // console.log(filterItem)
         setMenu(filterItem)
       }
     }

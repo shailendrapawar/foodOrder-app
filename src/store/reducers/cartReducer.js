@@ -61,6 +61,10 @@ export  function cartReducer(state=[],action){
             }).filter((item)=>item.quantity>0)
         }
 
+        case "cart/removeAll":{
+            return []
+        }
+
 
         default : return state
 

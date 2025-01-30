@@ -15,7 +15,8 @@ const Cart = () => {
 
   const handleClick=()=>{
     if(cartData.length>0){
-      alert("order placed")
+     
+      navigate("/address")
 
     }else{
       navigate("/")

@@ -59,8 +59,8 @@ useEffect(()=>{
 
       <header className="pizza-header bg-black h-15 flex justify-evenly items-center  justify-self-end" ref={pizzaRef}>
         <section className='w-[70%] h-8 max-w-88 '>
-          <input className='w-[80%] h-8 bg-white text-center rounded-tl-md rounded-bl-md outline-none pr-2 pl-2' value={searchKeyword} onChange={(e)=>setSearchKeyword(e.target.value.toLowerCase())}  type='text' placeholder='search for new items'></input>
-          <button className='w-[20%] h-8 bg-green-500 text-white rounded-tr-md rounded-br-md' onClick={()=>handleSearch()} style={searchKeyword===""?{ cursor:"not-allowed"}:{cursor:"pointer"}}>search</button>
+          <input className='w-[70%] h-8 bg-white text-center rounded-tl-md rounded-bl-md outline-none pr-2 pl-2' value={searchKeyword} onChange={(e)=>setSearchKeyword(e.target.value.toLowerCase())}  type='text' placeholder='search for new items'></input>
+          <button className='w-[30%] min-w-12 h-8 bg-green-500 text-white rounded-tr-md rounded-br-md' onClick={()=>handleSearch()} style={searchKeyword===""?{ cursor:"not-allowed"}:{cursor:"pointer"}}>search</button>
         </section>
 
         <div onClick={() => setVeg(!veg)} className="bg-white w-13 rounded-full  p-1 flex gap-1 items-center cursor-pointer select-none" style={veg ? { flexDirection: "row-reverse", backgroundColor: "rgb(0, 223, 0)" } : { flexDirection: "row", backgroundColor: "white" }}>
