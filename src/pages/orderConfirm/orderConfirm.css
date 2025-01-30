@@ -1,0 +1,86 @@
+/* OrderConfirmation.css */
+.confirmation-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+  }
+  
+  h2 {
+    color: #4caf50;
+    font-size: 24px;
+  }
+  
+  p {
+    color: #555;
+    font-size: 16px;
+  }
+  
+  .checkmark-container {
+    margin-top: 20px;
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+    text-align: center;
+  }
+  
+  .checkmark {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 5px solid green;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: checkmark 1s ease forwards;
+    rotate: -90deg;
+  }
+  
+  .checkmark::after {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 10px;
+    border: solid green;
+    border-width: 0 0 5px 5px;
+    transform: rotate(45deg);
+    animation: checkmarkAnimation 1s ease forwards;
+  }
+  
+  .success-message {
+    font-size: 18px;
+    color: green;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes checkmark {
+    0% {
+      transform: scale(0);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  @keyframes checkmarkAnimation {
+    0% {
+      transform: rotate(-45deg) scale(0);
+    }
+    100% {
+      transform: rotate(45deg) scale(1);
+    }
+  }
+  

@@ -28,7 +28,7 @@ const myRouter = createBrowserRouter(
       <Route path='/pizza' element={<Pizza/>}/>
       <Route path="/cart" element={<Cart />}></Route>
       <Route path='/orderConfirm' element={<OrderConfirm/>} />
-      <Route path='/address' element={<Address/>} />
+      <Route path='/address' element={<Address/>}/>
       <Route path='*' element={<ErrorPage/>} ></Route>
     </Route>
     
