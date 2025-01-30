@@ -1,12 +1,9 @@
 .item-desc{
-    
     display: none;
 }
 .cart-btn:active{
     transform: scale(0.9);
-
 }
-
 @keyframes cardAnime{
     0%{
         translate: 0px 50px;

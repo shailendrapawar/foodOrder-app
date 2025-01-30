@@ -2,6 +2,7 @@ import { useState, useEffect, useRef } from "react"
 import "./pizza.css"
 import { useSelector } from "react-redux"
 import ItemCard from "../../component/itemCard/ItemCard"
+import pizzaSrc from  "./pizza-banner2.jpg"
 const Pizza = () => {
 
   const [veg, setVeg] = useState(false)
@@ -17,8 +18,6 @@ const Pizza = () => {
       let newData = pizza.filter((item) => item.veg == true)
       setPizza(newData)
 
-      console.log(pizzaRef.current.classList)
-      // const pizzaBody = document.getElementsByClassName("pizza-body")
       pizzaRef.current.classList.remove("nonVegAnime")
       pizzaRef.current.classList.add("vegAnime")
     } else {
@@ -32,9 +31,9 @@ const Pizza = () => {
 
 
   return (
-    <div className=" pizza-body bg-slate-300 h-full flex flex-col justify-between " ref={pizzaRef}>
+    <div className=" pizza-body bg-slate-300 h-full flex flex-col justify-between select-none " style={{backgroundImage:`url(${pizzaSrc})`,backgroundSize:"cover"}} >
 
-      <header className="bg-black h-15 flex justify-evenly items-center  justify-self-end">
+      <header className="pizza-header bg-black h-15 flex justify-evenly items-center  justify-self-end" ref={pizzaRef}>
         <section className='w-[70%] h-8 max-w-88 '>
           <input className='w-[80%] h-8 bg-white text-center rounded-tl-md rounded-bl-md outline-none pr-2 pl-2' type='text' placeholder='search for new items'></input>
           <button className='w-[20%] h-8 bg-green-500 text-white rounded-tr-md rounded-br-md'>search</button>

@@ -11,23 +11,20 @@
 }
 
 .vegAnime{
-        animation: vegLoad 0.4s ;
+        animation: vegLoad 0.5s ;
 }
 .nonVegAnime{
-        animation: nonVegLoad 0.4s ;
+        animation: nonVegLoad 0.5s ;
 }
 
 @keyframes vegLoad{
     0%{
-        background-color: rgb(37, 213, 37);
+        background-color: rgb(1, 213, 1);
 
     }
-    50%{
-        background-color: rgb(111, 218, 111);
 
-    }
     100%{
-        background-color: rgba(222, 224, 222, 0.547);
+        background-color: rgba(106, 217, 106, 0.547);
     }
 }
 
@@ -36,12 +33,9 @@
         background-color: orangered;
 
     }
-    50%{
-        background-color: rgba(250, 158, 124, 0.753);
 
-    }
     100%{
-        background-color: rgba(255, 255, 255, 0.374);
+        background-color: rgba(255, 120, 120, 0.374);
    
     }
 }
