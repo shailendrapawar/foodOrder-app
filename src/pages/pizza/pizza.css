@@ -1,5 +1,6 @@
 .pizzaList-body{
     overflow-y: scroll;
+    /* background-size: contain; */
     /* animation: vegLoad 0.5s ; */
 }
 .pizzaList-body::-webkit-scrollbar{
@@ -20,11 +21,9 @@
 @keyframes vegLoad{
     0%{
         background-color: rgb(1, 213, 1);
-
     }
-
     100%{
-        background-color: rgba(106, 217, 106, 0.547);
+        background-color: rgba(4, 249, 4, 0.547);
     }
 }
 
@@ -35,7 +34,7 @@
     }
 
     100%{
-        background-color: rgba(255, 120, 120, 0.374);
+        background-color: rgb(252, 16, 16);
    
     }
 }
