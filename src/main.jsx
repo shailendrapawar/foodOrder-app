@@ -16,6 +16,9 @@ const CartPage=React.lazy(()=>import("./pages/cart/Cart.jsx"))
 import { myStore } from "./store/store.js"
 import { Provider } from 'react-redux'
 import Pizza from './pages/pizza/Pizza.jsx'
+import OrderConfirm from './pages/orderConfirm/OrderConfirm.jsx'
+import ErrorPage from './pages/errorPage.jsx'
+import Address from './pages/address/Address.jsx'
 
 
 const myRouter = createBrowserRouter(
@@ -24,7 +27,11 @@ const myRouter = createBrowserRouter(
       <Route path='' element={<Home />}></Route>
       <Route path='/pizza' element={<Pizza/>}/>
       <Route path="/cart" element={<Cart />}></Route>
+      <Route path='/orderConfirm' element={<OrderConfirm/>} />
+      <Route path='/address' element={<Address/>} />
+      <Route path='*' element={<ErrorPage/>} ></Route>
     </Route>
+    
   )
 )
 

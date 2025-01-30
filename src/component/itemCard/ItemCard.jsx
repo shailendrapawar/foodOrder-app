@@ -36,8 +36,6 @@ const ItemCard = ({ data }) => {
                     </option>
                   );
                 })}
-
-              
             </select>
           )}</i>
         </div>

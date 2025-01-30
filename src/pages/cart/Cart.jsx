@@ -4,18 +4,26 @@ import "./cart.css"
 import { useDispatch, useSelector } from 'react-redux'
 import CartList from '../../component/cartList/CartList'
 import emptyCart from "./empty-cart.jpg"
+import { useNavigate } from 'react-router-dom'
 
 const Cart = () => {
   const cartData=useSelector(state=>state.cart)
   const[total,setTotal]=useState(0);
 
+  const navigate=useNavigate()
   // console.log(cartData)
 
+  const handleClick=()=>{
+    if(cartData.length>0){
+      alert("order placed")
+
+    }else{
+      navigate("/")
+    }
+  }
   useEffect(() => {
     const p=cartData.reduce((acc,curr)=>{ return acc+=(curr.price)*curr.quantity},0)
     setTotal(p)
-    
-  
   }, [cartData])
   
 
@@ -40,7 +48,7 @@ const Cart = () => {
         <div className='bg-amber-400 h-13 flex justify-end items-center pr-5 text-white'>Total: ${total}</div>
       </section>
 
-      <button className='bg-green-400 h-10 w-30 rounded-md text-white'>confirm order</button>
+      <button className='bg-green-400 h-10 w-30 rounded-md text-white cursor-pointer' onClick={()=>handleClick()}>{cartData.length>0?"Place Order":"Add Items"}</button>
 
     </div>
   )
