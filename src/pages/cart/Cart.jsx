@@ -1,4 +1,5 @@
 import React from 'react'
+import { useEffect,useState } from 'react'
 import "./cart.css"
 import { useDispatch, useSelector } from 'react-redux'
 import CartList from '../../component/cartList/CartList'
@@ -6,11 +7,21 @@ import emptyCart from "./empty-cart.jpg"
 
 const Cart = () => {
   const cartData=useSelector(state=>state.cart)
-  console.log(cartData)
+  const[total,setTotal]=useState(0);
+
+  // console.log(cartData)
+
+  useEffect(() => {
+    const p=cartData.reduce((acc,curr)=>{ return acc+=(curr.price)*curr.quantity},0)
+    setTotal(p)
+    
+  
+  }, [cartData])
+  
+
+
   return (
-    <div className='bg-slate-200 h-full flex items-center justify-center flex-col'>
-
-
+    <div className='bg-slate-200 h-full flex items-center justify-center flex-col gap-10'>
 
       <section className='h-[400px] w-[100%] max-w-[700px] bg-gray-500 flex flex-col justify-between'>
 
@@ -19,21 +30,17 @@ const Cart = () => {
             cartData.length>0?(cartData.map((item,i)=>{
               return <CartList key={i} data={item}/>
             })):(<div className=' h-full relative' >
-              {/* <span className=' absolute top-0 right-[50%]'>Empty Cart</span> */}
+              
               <img className=' object-contain h-full w-full' src={emptyCart}></img>
               
             </div>)
           }
         </div>
 
-        <div className='bg-amber-400 h-13 flex justify-end items-center pr-5 text-white'>Total: $100</div>
+        <div className='bg-amber-400 h-13 flex justify-end items-center pr-5 text-white'>Total: ${total}</div>
       </section>
 
-
-
-
-
-      <button className=' '>confirm order</button>
+      <button className='bg-green-400 h-10 w-30 rounded-md text-white'>confirm order</button>
 
     </div>
   )

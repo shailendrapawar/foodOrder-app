@@ -8,12 +8,6 @@ import { useEffect } from "react";
 const CartList = ({ data }) => {
 
     const dispatch=useDispatch()
-
-    // console.log(data)
-
-    // useEffect(()=>{
-
-    // },[data])
     return (
         <div className=" min-h-25 h-25 bg-slate-200 flex justify-between pr-3 pl-3 items-center">
             
