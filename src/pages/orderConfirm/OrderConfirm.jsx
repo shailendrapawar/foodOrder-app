@@ -4,12 +4,12 @@ import { useNavigate } from 'react-router-dom';
 
 const OrderConfirm = () => {
 
-  const [isLoaded, setIsLoaded] = useState(false);
+  const [isLoaded, setIsLoaded] = useState(true);
   const navigate=useNavigate()
-  useEffect(() => {
-    // Trigger the animation once the component is mounted
-    setIsLoaded(true);
-  }, []);
+  // useEffect(() => {
+  //   // Trigger the animation once the component is mounted
+  //   setIsLoaded(true);
+  // }, []);
 
 
   return (

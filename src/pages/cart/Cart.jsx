@@ -39,7 +39,7 @@ const Cart = () => {
             cartData.length>0?(cartData.map((item,i)=>{
               return <CartList key={i} data={item}/>
             })):(<div className=' h-full relative' >
-              <img className=' object-contain h-full w-full' src={emptyCart}></img>
+              <img  loading="lazy" className=' object-contain h-full w-full' src={emptyCart}></img>
             </div>)
           }
         </div>

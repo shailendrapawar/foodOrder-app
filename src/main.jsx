@@ -31,10 +31,8 @@ const myRouter = createBrowserRouter(
       <Route path='/address' element={<Address/>}/>
       <Route path='*' element={<ErrorPage/>} ></Route>
     </Route>
-    
   )
 )
-
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
