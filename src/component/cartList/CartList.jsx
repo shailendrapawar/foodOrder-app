@@ -9,7 +9,7 @@ const CartList = ({ data }) => {
 
     const dispatch=useDispatch()
     return (
-        <div className=" min-h-25 h-25 bg-slate-200 flex justify-between pr-3 pl-3 items-center">
+        <div className=" min-h-25 h-25 bg-slate-200 flex justify-between pr-3 pl-3 items-center select-none">
             
             <img className="h-24 w-28 object-contain" src={data.img}></img>
 

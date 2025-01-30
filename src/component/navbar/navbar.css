@@ -6,3 +6,28 @@
     border-bottom: 3px solid transparent;
     transition: 0.2s ease-in-out;
 }
+.cart-text{
+    /* animation: wiggle 0.5s infinite ; */
+}
+
+.wiggleAnime{
+    animation: wiggle 0.5s  ;
+}
+
+@keyframes wiggle {
+    0% {
+      transform: rotate(-10deg); /* Start with a small rotation */
+    }
+    25% {
+      transform: rotate(10deg);  /* Rotate to the other side */
+    }
+    50% {
+      transform: rotate(-10deg); /* Rotate back */
+    }
+    75% {
+      transform: rotate(10deg);  /* Rotate again */
+    }
+    100% {
+      transform: rotate(0deg);  /* End with no rotation */
+    }
+  }
