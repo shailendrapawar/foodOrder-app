@@ -33,7 +33,7 @@ const Home = () => {
     },[searchKeyword])
 
   return (
-    <div className='bg-slate-200 h-full select-none'>
+    <div className='bg-slate-200 h-full select-none relative'>
       <img src={bgImgsrc} loading='lazy' className='w-screen h-[50%] max-h-76 object-cover'>
       </img>
 
@@ -47,7 +47,7 @@ const Home = () => {
         </div>
 
         <div className='items-list-body h-auto min-h-48 flex justify-start items-center p-4 gap-4'> {
-          menu.map((item, i) => <ItemCard key={i} data={item} />)
+          menu.length>0?(menu.map((item, i) => <ItemCard key={i} data={item} />)):(<h1 className='text-3xl'>no item... :)</h1>)
         }</div>
 
       </section>

@@ -71,7 +71,7 @@ useEffect(()=>{
 
 
       <section className=" pizzaList-body h-[80%] max-w-[600px] bg-transparent flex flex-wrap  justify-evenly self-center gap-2 p-2" ref={cardBodyRef}>
-        {pizza.map((item, i) => <ItemCard key={i} data={item} />)}
+        {pizza.length>0?(pizza.map((item, i) => <ItemCard key={i} data={item} />)):(<h1 className='text-3xl'>no item... :)</h1>)}
       </section>
 
     </div>

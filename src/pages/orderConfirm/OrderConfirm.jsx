@@ -11,7 +11,6 @@ const OrderConfirm = () => {
     setIsLoaded(true);
   }, []);
 
-  
 
   return (
     <div className="confirmation-container">
@@ -22,7 +21,7 @@ const OrderConfirm = () => {
       <div className="checkmark-container flex flex-col items-center gap-2">
         <div className="checkmark"></div>
         <p className="success-message" >Success!</p>
-        <button className='h-10 w-28 bg-blue-500 text-white rounded-md' onClick={()=>navigate("/")}>Order More</button>
+        <button className='h-10 w-28 bg-blue-500 text-white rounded-md' onClick={()=>navigate("/")}>Explore More</button>
       </div>
       
     )}

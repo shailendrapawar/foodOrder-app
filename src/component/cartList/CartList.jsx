@@ -15,9 +15,9 @@ const CartList = ({ data }) => {
 
             <span className=" text-xs max-w-15">{data.name}</span>
 
-            <div className=" flex w-20 justify-evenly items-center">
+            <div className=" flex w-20 justify-evenly items-center gap-1">
                 <FaCircleMinus onClick={()=>dispatch(cart_decreaseQty(data))} className="text-green-500 h-6 w-6"></FaCircleMinus>
-                <b>{data.quantity}</b>
+                <b className="w-5 text-center bg-white rounded-md">{data.quantity}</b>
                 <FaCirclePlus onClick={()=>dispatch(cart_increaseQty(data))} className="text-green-500 h-6 w-6"/>
             </div>
 

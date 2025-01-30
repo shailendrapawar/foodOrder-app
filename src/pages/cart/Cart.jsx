@@ -39,17 +39,15 @@ const Cart = () => {
             cartData.length>0?(cartData.map((item,i)=>{
               return <CartList key={i} data={item}/>
             })):(<div className=' h-full relative' >
-              
               <img className=' object-contain h-full w-full' src={emptyCart}></img>
-              
             </div>)
           }
         </div>
 
-        <div className='bg-amber-400 h-13 flex justify-end items-center pr-5 text-white'>Total: ${total}</div>
+        <div className='bg-amber-400 h-15 flex justify-end items-center pr-5 text-black'><b className='bg-white w-25 h-9 flex items-center justify-center text-center text-sm rounded-md'>Total: ${total}</b></div>
       </section>
 
-      <button className='bg-green-400 h-10 w-30 rounded-md text-white cursor-pointer' onClick={()=>handleClick()}>{cartData.length>0?"Place Order":"Add Items"}</button>
+      <button className='bg-green-500 h-10 w-30 rounded-md text-white cursor-pointer' onClick={()=>handleClick()}>{cartData.length>0?"Place Order":"Add Items"}</button>
 
     </div>
   )

@@ -17,7 +17,7 @@ import { myStore } from "./store/store.js"
 import { Provider } from 'react-redux'
 import Pizza from './pages/pizza/Pizza.jsx'
 import OrderConfirm from './pages/orderConfirm/OrderConfirm.jsx'
-import ErrorPage from './pages/errorPage.jsx'
+import ErrorPage from './pages/ErrorPage.jsx'
 import Address from './pages/address/Address.jsx'
 
 
