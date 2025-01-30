@@ -1,4 +1,4 @@
-import { useState,useEffect } from "react"
+import { useState, useEffect, useRef } from "react"
 import "./pizza.css"
 import { useSelector } from "react-redux"
 import ItemCard from "../../component/itemCard/ItemCard"
@@ -6,24 +6,33 @@ const Pizza = () => {
 
   const [veg, setVeg] = useState(false)
   const p = useSelector((state) => state.pizza)
-  const[pizza,setPizza]=useState(p);
+  const [pizza, setPizza] = useState(p);
   // console.log(pizza)
 
-  useEffect(() => {
-    
-    if(veg){
-      let newData=pizza.filter((item)=>item.veg==true)
-    setPizza(newData)
-    }else{
-      setPizza(p)
-    }
-    
-  }, [veg])
-  
+  const pizzaRef = useRef()
 
-  
+  useEffect(() => {
+
+    if (veg) {
+      let newData = pizza.filter((item) => item.veg == true)
+      setPizza(newData)
+
+      console.log(pizzaRef.current.classList)
+      // const pizzaBody = document.getElementsByClassName("pizza-body")
+      pizzaRef.current.classList.remove("nonVegAnime")
+      pizzaRef.current.classList.add("vegAnime")
+    } else {
+      setPizza(p)
+      pizzaRef.current.classList.remove("vegAnime")
+      pizzaRef.current.classList.add("nonVegAnime")
+    }
+
+  }, [veg])
+
+
+
   return (
-    <div className="bg-slate-300 h-full flex flex-col justify-between ">
+    <div className=" pizza-body bg-slate-300 h-full flex flex-col justify-between " ref={pizzaRef}>
 
       <header className="bg-black h-15 flex justify-evenly items-center  justify-self-end">
         <section className='w-[70%] h-8 max-w-88 '>
@@ -38,7 +47,7 @@ const Pizza = () => {
       </header>
 
 
-      <section className=" pizzaList-body h-[80%] max-w-[600px] bg-slate-300 flex flex-wrap  justify-evenly self-center gap-1 p-1">
+      <section className=" pizzaList-body h-[80%] max-w-[600px] bg-transparent flex flex-wrap  justify-evenly self-center gap-2 p-2">
         {pizza.map((item, i) => <ItemCard key={i} data={item} />)}
       </section>
 

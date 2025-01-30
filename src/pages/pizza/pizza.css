@@ -1,7 +1,47 @@
 .pizzaList-body{
     overflow-y: scroll;
+    /* animation: vegLoad 0.5s ; */
 }
 .pizzaList-body::-webkit-scrollbar{
     display: none;
+}
 
+.pizza-body{
+    /* animation: vegLoad 0.5s ; */
+}
+
+.vegAnime{
+        animation: vegLoad 0.4s ;
+}
+.nonVegAnime{
+        animation: nonVegLoad 0.4s ;
+}
+
+@keyframes vegLoad{
+    0%{
+        background-color: rgb(37, 213, 37);
+
+    }
+    50%{
+        background-color: rgb(111, 218, 111);
+
+    }
+    100%{
+        background-color: rgba(222, 224, 222, 0.547);
+    }
+}
+
+@keyframes nonVegLoad{
+    0%{
+        background-color: orangered;
+
+    }
+    50%{
+        background-color: rgba(250, 158, 124, 0.753);
+
+    }
+    100%{
+        background-color: rgba(255, 255, 255, 0.374);
+   
+    }
 }

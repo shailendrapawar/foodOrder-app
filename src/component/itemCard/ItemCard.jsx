@@ -16,11 +16,9 @@ const ItemCard = ({ data }) => {
   const[sizes,setSizes]=useState(data.sizeandcrust)
   // console.log(sizes)
 
-
-
   return (
     <div className=" item-card h-46 w-56 min-w-56 bg-white relative flex flex-col rounded-md justify-evenly overflow-hidden cursor-pointer">
-      <img onClick={() => setClicked(!clicked)} className=" item-img w-full h-30 object-contain bg-white p-1 rounded-md" style={clicked ? { filter: `blur(30px)` } : { display: "block", animation: "imgAnime 0.5s " }} src={data.img}></img>
+      <img onClick={() => setClicked(!clicked)} className=" item-img w-full h-30 object-contain bg-white  rounded-md" style={clicked ? { filter: `blur(30px)` } : { display: "block", animation: "imgAnime 0.5s " }} src={data.img}></img>
       <span onClick={() => setClicked(!clicked)} className=" item-desc w-full text-xs absolute top-0 overflow-hidden p-1 h-28  text-center bg-green-600 text-white items-center justify-center" style={clicked ? { display: "flex", animation: `cardAnime 0.5s` } : {}}>{data.description}</span>
       <h1 className=" item-title text-center text-[13px] pr-1 pl-1 ">{data.name}</h1>
       <div className=" flex justify-between pr-2 pl-2">
@@ -31,6 +29,7 @@ const ItemCard = ({ data }) => {
                 {sizes.map((sizeObj, i) => {
                   const size = Object.keys(sizeObj)[0]; // Extracting the key (size)
                   const price = sizeObj[size]; // Extracting the price value
+
                   return (
                     <option key={i} value={price}>
                       {`${size.charAt(0).toUpperCase() + size.slice(1)} - $${price}`}
@@ -42,8 +41,8 @@ const ItemCard = ({ data }) => {
             </select>
           )}</i>
         </div>
-        <b className="text-slate-500 ">${data.price}</b>
-        <FaCartShopping className="h-6 w-6 text-green-600 self-end" onClick={() => {
+        <b className="text-slate-500 ">${newPrice}</b>
+        <FaCartShopping className=" cart-btn h-6 w-6 text-green-600 self-end" onClick={() => {
           dispatch(cart_add({...data,price:newPrice}))
         }} />
       </div>

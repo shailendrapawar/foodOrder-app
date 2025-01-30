@@ -64,7 +64,7 @@ export const pizzaData = [
     "quantity": 1,
     "img": "https://api.pizzahut.io/v1/content/en-in/in-1/images/pizza/veg-kebab-surprise.abab1dff179ab8cf95a59f30d6352297.1.jpg?width=550",
     "sizeandcrust": [
-      { "small": 5 },
+      { "small": 4 },
       { "medium": 6 },
       { "large": 8 }
     ]
@@ -92,7 +92,7 @@ export const pizzaData = [
     "quantity": 1,
     "img": "https://api.pizzahut.io/v1/content/en-in/in-1/images/pizza/chicken-tikka-supreme.830de5a911ca95a30e4ca98e529f1b3a.1.jpg?width=550",
     "sizeandcrust": [
-      { "small": 7 },
+      { "small": 6 },
       { "medium": 9 },
       { "large": 11 }
     ]
@@ -218,7 +218,7 @@ export const pizzaData = [
     "quantity": 1,
     "img": "https://api.pizzahut.io/v1/content/en-in/in-1/images/pizza/tandoori-onion.98e8cbd306a1166cedbbdbd2a97eade3.1.jpg?width=550",
     "sizeandcrust": [
-      { "small": 7 },
+      { "small": 6 },
       { "medium": 9 },
       { "large": 11 }
     ]
@@ -227,7 +227,7 @@ export const pizzaData = [
     "id": 16,
     "name": "Chicken Pepperoni",
     "veg": false,
-    "price": 5,
+    "price": 8,
     "description": "Cheese ,Chicken pepperoni",
     "quantity": 1,
     "img": "https://api.pizzahut.io/v1/content/en-in/in-1/images/pizza/chicken-pepperoni.6952ef03215b72477abff3574b4b881e.1.jpg?width=550",
@@ -260,9 +260,9 @@ export const pizzaData = [
     "quantity": 1,
     "img": "https://api.pizzahut.io/v1/content/en-in/in-1/images/pizza/farmers-pick.794695a631c14d4404057470020be703.1.jpg?width=550",
     "sizeandcrust": [
-      { "small": 5 },
-      { "medium": 6 },
-      { "large": 8 }
+      { "small": 29 },
+      { "medium": 35 },
+      { "large": 40 }
     ]
   },
   {
@@ -381,7 +381,7 @@ export const pizzaData = [
     "id": 27,
     "name": "Italian Pepperoni & Onion",
     "veg": false,
-    "price": 5,
+    "price": 6,
     "description": "Pizza topped with our Chef's Special Italian sauce, crunchy onion, chicken pepperoni and cheesy dressing.",
     "quantity": 1,
     "img": "https://api.pizzahut.io/v1/content/en-in/in-1/images/pizza/italian-pepperoni-&-onion-pan-personal.b6c0c99c9241f2fce14493773f625dd3.1.jpg?width=550",
@@ -395,7 +395,7 @@ export const pizzaData = [
     "id": 28,
     "name": "Schezwan Meatball & Capsicum",
     "veg": false,
-    "price": 10,
+    "price": 12,
     "description": "Pizza topped with Spicy Schezwan sauce, crunchy capsicum, Schezwan meatballs and cheesy dressing making it spice lovers paradise.",
     "quantity": 1,
     "img": "https://api.pizzahut.io/v1/content/en-in/in-1/images/pizza/schezwan-meatball-&-capsicum-pan-personal.e27dd4520db7e81fbebeec8428a925bf.1.jpg?width=550",
@@ -409,7 +409,7 @@ export const pizzaData = [
     "id": 29,
     "name": "Tandoori Tikka & Onion",
     "veg": false,
-    "price": 5,
+    "price": 6,
     "description": "Pizza topped with our signature tandoori sauce, crunchy onion, flavorful chicken tikka and cheesy dressing.",
     "quantity": 1,
     "img": "https://api.pizzahut.io/v1/content/en-in/in-1/images/pizza/tandoori-tikka-&-onion-pan-personal.e47a58535b3ef920e00d559d79defad4.1.jpg?width=550",

@@ -2,7 +2,10 @@
     
     display: none;
 }
+.cart-btn:active{
+    transform: scale(0.9);
 
+}
 
 @keyframes cardAnime{
     0%{
